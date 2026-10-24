@@ -71,3 +71,7 @@ A group looks like:
 ## Tests
 
 `pip install pytest-homeassistant-custom-component PyTurboJPEG && pytest tests`
+
+## License
+
+MIT
