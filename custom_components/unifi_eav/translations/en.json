@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "UniFi EAV Bridge",
+        "description": "Connect to your UniFi console. Use a dedicated local admin account, not your Ubiquiti cloud login.",
+        "data": {
+          "host": "Console address",
+          "username": "Local username",
+          "password": "Password",
+          "site": "Site",
+          "verify_ssl": "Verify SSL certificate"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate UniFi EAV",
+        "data": {
+          "username": "Local username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Login rejected. Check the local username and password.",
+      "cannot_connect": "Could not reach the console or its AV API."
+    },
+    "abort": {
+      "already_configured": "This console and site are already set up.",
+      "reauth_successful": "Re-authenticated."
+    }
+  }
+}
